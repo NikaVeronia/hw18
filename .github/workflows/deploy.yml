@@ -20,9 +20,8 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Build project
-        run: npm i
-      - name: Build project
+
+      - name: Build hv18
         run: npm run build
 
       - name: Upload production-ready build files
