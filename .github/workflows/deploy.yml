@@ -21,7 +21,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
 
-      - name: Build hv18
+      - name: Build hw18
         run: npm run build
 
       - name: Upload production-ready build files
