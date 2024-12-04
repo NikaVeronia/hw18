@@ -9,6 +9,7 @@ import "./styles.css";
 import { getBean } from "../../api/bean";
 
 export const BeanPage = () => {
+ 
   const { id } = useParams();
   const dispatch = useAppDispatch();
   const { data, isLoading, isError } = useSelector(beanSelector);
@@ -16,7 +17,7 @@ export const BeanPage = () => {
   useEffect(() => {
     dispatch(getBean(id));
   }, [id]);
-
+  
   return (
     <>
       {isLoading && <Loader />}
